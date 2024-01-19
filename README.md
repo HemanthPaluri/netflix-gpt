@@ -26,7 +26,7 @@
 - update Store with Trailer Video data
 - Embedded the youtube Video and make it auto play and mute
 - Tailwind class to take full width by sing full screen and aspect ratio for Video
-- 
+- Build Secondary component
 
 
 # Features
