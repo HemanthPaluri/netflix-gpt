@@ -3,7 +3,16 @@
 - Create React app
 - Configured TailwindCSS
 - Header
+- Routing of Form
 - Login Form
+- Form Validation
+- useRef Hook
+- FireBase setup
+- Deploying app to production
+- Create signUp for user Account
+- Impliment SignIn user API
+- Created our Redux Store with user Slice
+- 
 
 
 # Features
