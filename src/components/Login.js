@@ -3,12 +3,11 @@ import Header from './Header'
 import {ValidateUserData} from '../utils/Validations'
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
 import {auth} from '../utils/Firebase'
-import { useNavigate } from 'react-router-dom'
 import { addUser } from '../utils/userSlice';
 import { useDispatch } from 'react-redux';
+import { BACKGROUND_IMG } from '../utils/constants';
 
 const Login = () => {
-    const navigate = useNavigate()
     const dispatch = useDispatch();
 
     const [isSingInForm, setIsSingInForm] = useState(true);
@@ -35,7 +34,6 @@ const Login = () => {
                   }).then(() => {
                     const {uid, email, displayName} = auth.currentUser;
                     dispatch(addUser({uid:uid, email: email, displayName:displayName }))
-                    navigate("/browse")
                     console.log(user)
                   }).catch((error) => {
                     setErrorMessage(error.message)
@@ -54,7 +52,6 @@ const Login = () => {
                 // Signed in 
                 const user = userCredential.user;
                 console.log(user)
-                navigate("/browse")
             })
             .catch((error) => {
                 const errorCode = error.code;
@@ -73,7 +70,7 @@ const Login = () => {
     <div >
         <Header />
         <div className=' absolute'>
-            <img src="https://assets.nflxext.com/ffe/siteui/vlv3/16006346-87f9-4226-bc25-a1fb346a2b0c/9662d0fd-0547-4665-b887-771617268815/IN-en-20240115-popsignuptwoweeks-perspective_alpha_website_large.jpg"
+            <img src={BACKGROUND_IMG}
             alt='Background'/>
         </div>
         <form onSubmit={(e) => e.preventDefault()} className='w-3/12 absolute p-12 my-36 bg-black bg-opacity-85 mx-auto right-0 left-0 text-white'>

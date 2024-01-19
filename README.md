@@ -12,6 +12,21 @@
 - Create signUp for user Account
 - Impliment SignIn user API
 - Created our Redux Store with user Slice
+- Fetch from TMDB Movies
+- Bug Fix: If user not logged in redirect to login page 
+- Unsubscribed to the onAuthStateChange callback
+- Constants
+- create account for TMDB
+- Create a project in TMDB and get Movies list from API
+- Custom hook for now playing movies
+- create a movie slice
+- update store with movie data
+- Planing for main container and secondary container
+- Fetch data for Trailer data
+- update Store with Trailer Video data
+- Embedded the youtube vedio and make it auto play and mute
+- Tailwing class to take full width by sing full screen and aspect ratio for Video
+- 
 - 
 
 
