@@ -24,9 +24,8 @@
 - Planing for main container and secondary container
 - Fetch data for Trailer data
 - update Store with Trailer Video data
-- Embedded the youtube vedio and make it auto play and mute
-- Tailwing class to take full width by sing full screen and aspect ratio for Video
-- 
+- Embedded the youtube Video and make it auto play and mute
+- Tailwind class to take full width by sing full screen and aspect ratio for Video
 - 
 
 
