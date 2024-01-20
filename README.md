@@ -30,6 +30,10 @@
 - Movie Lis
 - Movie Card
 - TMDB Image CDN in constants
+- GPT Search feature
+- Localization
+- Intigerate GPT API's (Get openAI key)
+- 
 
 
 # Features

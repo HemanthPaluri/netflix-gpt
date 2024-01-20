@@ -11,3 +11,18 @@ export const API_OPTIONS = {
 };
 
 export const IMAGE_CDN_URL = "https://image.tmdb.org/t/p/w400";
+
+export const SUPPORTED_LANG= [
+  {
+    identifier: 'en',
+    name: 'english'
+  },
+  {
+    identifier: 'telugu',
+    name: 'తెలుగు'
+  },
+  {
+    identifier: 'spanish',
+    name: 'española'
+  }
+]
